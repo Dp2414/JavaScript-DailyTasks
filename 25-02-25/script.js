@@ -235,7 +235,7 @@ person.address.city = "Programton";
 console.log(person.address.city);  //Output:-
 
 
-// ---------
+// ----------------------------------------------------------------------------------------------
 
 
 //12. What will be the values of x, y, p, and q after this code runs?
@@ -262,7 +262,7 @@ num %= 4; //3.66
 // ----------------------------------------------------------------------------------------------
 
 
-//14.
+//14. What will be output to the console?
 let greeting = "Hello";
 let name = "JavaScript";
 console.log(greeting + " " + name); // Output:-Hello JavaScript
