@@ -136,7 +136,7 @@ console.log(Math("add", 5, 10));
 //------------------------------------------------------------------------------------------------------
 
 
-//2.IIFE
+//2.Write an IIFE that calculates the sum of an array of numbers and logs the result to the console in that function.
 (function () {
   let numbers = [1, 2, 3, 4, 5];
   let sum = 0;
@@ -170,7 +170,10 @@ console.log(createUser("xyz", "admin"));
 //------------------------------------------------------------------------------------------------------
 
 
-//4.
+//4.Define a function named operator which returns null. provide arguments one
+// variable and two numbers and console the sum to output by assigning it to
+// argument. (Hint: use the reference type variable as an argument).
+
 function operator(isokey, num1 = 4, num2 = 5) {
   isokey.sum = num1 + num2;
   console.log(`The sum is: ${isokey.sum}`);
@@ -184,7 +187,7 @@ operator(obj);
 //------------------------------------------------------------------------------------------------------
 
 
-//5.As per IIFE and Immediately Invoked Arrow Function
+//5.As per IIFE and Immediately Invoked Arrow Function function that calculates and logs the product of two numbers.
 (() => {
   const h = 5,
     l = 3;
