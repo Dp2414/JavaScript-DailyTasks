@@ -188,11 +188,10 @@ operator(obj);
 
 
 //5.As per IIFE and Immediately Invoked Arrow Function function that calculates and logs the product of two numbers.
-(() => {
-  const h = 5,
-    l = 3;
+((h,l) => {
+ 
   console.log(`The product of two numbers : ${h * l}`);
-})();
+})(5,3);
 //Output:-The product of two numbers : 15
 
 //   with normal arrow function
