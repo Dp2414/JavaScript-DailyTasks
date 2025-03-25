@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blue;
+            color: white;
+            text-align: center;
+          
+        }
+ .container1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+           
+        }
+        .container{
+
+        } 
+
+        .first {
+            font-size: 55px;
+        }
+
+        span {
+            font-size: 30px;
+        }
+        p{
+            margin-top: 200px;
+            font-size:25px;
+        }
+        .p2{
+            font-size: 16px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <p> <u>Digital Clock</u></p>
+    <div class="container1">
+       
+        <div class="hours first"></div> <span>:</span>
+        <div class="minutes first"></div> <span>:</span>
+        <div class="seconds first"></div> 
+    </div>
+</div>
+
+<p class="p2">Made with 💖 <i>javascript</i></p>
+    <script>
+const hours=document.querySelector(".hours");
+const minutes=document.querySelector(".minutes");
+const seconds=document.querySelector(".seconds");
+
+function digitalClock(){
+const myTime=new Date();
+
+
+
+let txthour=myTime.getHours();
+let txtminute=myTime.getMinutes();
+let txtsecond=myTime.getSeconds();
+
+
+txthour = txthour.toString().padStart(2, '0');
+txtminute = txtminute.toString().padStart(2, '0');
+txtsecond = txtsecond.toString().padStart(2, '0');
+
+hours.textContent=txthour;
+minutes.textContent=txtminute;
+seconds.textContent=txtsecond;
+
+}
+setInterval(digitalClock, 1000)
+digitalClock();
+
+    </script>
+</body>
+</html>
